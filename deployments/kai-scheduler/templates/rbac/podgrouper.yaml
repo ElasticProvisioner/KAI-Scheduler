@@ -254,6 +254,14 @@ rules:
   - patch
   - update
 - apiGroups:
+  - nvidia.com
+  resources:
+  - dynamographdeployments
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
   - ray.io
   resources:
   - rayclusters
@@ -283,6 +291,7 @@ rules:
   - kartas
   - runaijobs
   - trainingworkloads
+  - workloadrunners
   verbs:
   - get
   - list
